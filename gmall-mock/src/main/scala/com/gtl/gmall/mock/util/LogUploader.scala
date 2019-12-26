@@ -10,7 +10,8 @@ object LogUploader {
         try {
             // 1. 日志服务器的地址
             //val logUrl = new URL("http://localhost:8080/log") // 本地运行springboot
-            val logUrl = new URL("http://hadoop102:8080/log") // linux运行springboot
+            //val logUrl = new URL("http://hadoop102:8080/log") // linux运行springboot
+            val logUrl = new URL("http://hadoop102:80/log") // linux运行springboot--负载均衡
 
             // 2. 得到一个 HttpURLConnection
             val conn: HttpURLConnection = logUrl.openConnection().asInstanceOf[HttpURLConnection]
