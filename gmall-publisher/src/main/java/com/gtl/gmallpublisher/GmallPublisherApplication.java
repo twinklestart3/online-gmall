@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 // 增加扫描包
-@MapperScan(basePackages = "com.gtl.gmallpublisher.mapper.DauMapper")
+@MapperScan(basePackages = "com.gtl.gmallpublisher.mapper")
 public class GmallPublisherApplication {
 
     public static void main(String[] args) {
